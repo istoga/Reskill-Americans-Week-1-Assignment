@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    width: 90vw;
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background: rgb(218, 192, 255);
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a,
+nav ul {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding-right: 25px;
+}
+
+#logo {
+    width: 125px;
+    height: auto;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.hero h1 {
+    font-size: 74px;
+    /* text-align: center; */
+    margin-top: 200px;
+}
+
+#hero {
+    height: 100vh;
+    width: 100%;
+    object-fit: fill;
+    /* margin-bottom: 50px; */
+}
+
+#about p {
+    font-size: 24px;
+    padding: 0 350px 100px;
+    line-height: 2em;
+}
+
+.title {
+    font-size: 40px;
+    padding: 250px 0 100px 0;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    grid-gap: 3px;
+    grid-template-areas: 
+        "i i i i";
+}
+
+.grid-item {
+    grid-area: i i i i;
+}
+
+.grid-item .card-caption {
+    padding: 20px 100px;
+}
+
+.grid-item h4 {
+    padding-bottom: 10px;
+}
+
+.grid-container img {
+    width: 300px;
+    height: 150px;
+}
+
+#contact {
+    padding-bottom: 100px; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#submit-button {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+footer img {
+    width: 75px;
+    height: auto;
+}
+
+footer{
+    background: #dac0ff;
+    color: #000;
+    padding: 25px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 5px;
+}
+
+footer button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 8px;
+    cursor: pointer;
+
+}
+
+footer button:hover {
+    background: #dac0ff;
+    color: #fff;
+}
+
+
+
